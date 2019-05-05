@@ -25,7 +25,7 @@ body{
 <P><div id="cnt"></div>
 
 <script type="text/javascript">
-var oneLink = 'https://www.youtube.com/watch_videos?video_ids=';
+var oneLink = '';
 var cnt = 0;
 
 function createLink(responsetext)
@@ -34,6 +34,7 @@ function createLink(responsetext)
     responsetext = responsetext.replace(/iframe/g,"\niframe");
     var lines = responsetext.split("\n");
     var str = '';
+	oneLink = 'https://www.youtube.com/watch_videos?video_ids=';
 	cnt = 0;
 
     for(var i = 0;i < lines.length;i++){
