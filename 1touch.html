@@ -34,6 +34,7 @@ function createLink(responsetext)
     responsetext = responsetext.replace(/iframe/g,"\niframe");
     var lines = responsetext.split("\n");
     var str = '';
+	cnt = 0;
 
     for(var i = 0;i < lines.length;i++){
       if (lines[i].indexOf('iframe')>-1 && lines[i].indexOf('yout')>-1) {
